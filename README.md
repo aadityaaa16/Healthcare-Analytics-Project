@@ -31,6 +31,20 @@ The goal is to analyze and visualize key factors contributing to **heart disease
 └── requirements.txt
 
 
+Save the README.md.
+
+---
+
+# ✅ **STEP 6 — Commit Your Changes**
+
+Run these commands:
+
+```bash
+git add .
+git commit -m "Added full project structure and files"
+git push
+
+
 ---
 
 ---
