@@ -109,7 +109,7 @@ Machine learning was used to predict heart disease probability based on patient 
 # 📊 Power BI Dashboard — Pages Overview
 
 📄 **Power BI Folder:**  
-👉 https://github.com/aadityaaa16/heart-disease-analytics/tree/main/Overview Dashboard.png
+👉 https://github.com/aadityaaa16/Healthcare-Analytics-Project/blob/c53160dfbb604c03d353d90da3b093960c7e16f5/Overview%20Dashboard.png
 
 The dashboard consists of 4 pages:
 
