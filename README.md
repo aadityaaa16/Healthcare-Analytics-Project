@@ -14,38 +14,6 @@ The goal is to analyze and visualize key factors contributing to **heart disease
 
 ## 📂 Project Structure
 
-├── data/
-│ └── heart.csv
-├── sql/
-│ └── heart_analysis.sql
-├── python/
-│ ├── eda.ipynb
-│ └── model_building.ipynb
-├── powerbi/
-│ ├── page1_overview.png
-│ ├── page2_cholesterol.png
-│ ├── page3_gender.png
-│ ├── page4_interactive.png
-│ └── dashboard.pbix (optional)
-├── README.md
-└── requirements.txt
-
-
-Save the README.md.
-
----
-
-# ✅ **STEP 6 — Commit Your Changes**
-
-Run these commands:
-
-```bash
-git add .
-git commit -m "Added full project structure and files"
-git push
-
-
----
 
 ---
 
