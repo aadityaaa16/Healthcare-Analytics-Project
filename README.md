@@ -68,11 +68,9 @@ SQL analysis was performed to understand dataset distribution and segment high-r
 Python notebooks were used for data cleaning, EDA, visualization, and ML model development.
 
 📄 **Python EDA Link:**  
-👉 https://github.com/aadityaaa16/heart-disease-analytics/blob/main/python/Healthcare.ipynb  
-
+👉 https://github.com/aadityaaa16/Healthcare-Analytics-Project/blob/b39da65a1791f4887f4511867e5d55102b1541ff/Healthcare.ipynb
 📄 **Python ML Link:**  
-👉 https://github.com/aadityaaa16/heart-disease-analytics/blob/main/python/Healthcare.ipynb  
-
+👉 https://github.com/aadityaaa16/Healthcare-Analytics-Project/blob/b39da65a1791f4887f4511867e5d55102b1541ff/Healthcare.ipynb
 ### Python Tasks Performed
 - Data profiling  
 - Missing value checks  
