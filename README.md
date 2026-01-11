@@ -50,7 +50,7 @@ Contains **303 patient records** with the following features:
 SQL analysis was performed to understand dataset distribution and segment high-risk groups.
 
 📄 **SQL File Link:**  
-👉 HEART DISEASE SQL QUERIES.sql
+👉 https://github.com/aadityaaa16/Healthcare-Analytics-Project/blob/b39da65a1791f4887f4511867e5d55102b1541ff/HEART%20DISEASE%20SQL%20QUERIES.sql
 
 ### SQL Techniques Used
 - Data extraction & filtering  
