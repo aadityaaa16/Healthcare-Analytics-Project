@@ -59,5 +59,14 @@ SUM(target) AS positive_cases,
 AVG(chol) AS avg_cholesterol
 FROM heart
 GROUP BY sex;
+/sql/heart_analysis.sql
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 
