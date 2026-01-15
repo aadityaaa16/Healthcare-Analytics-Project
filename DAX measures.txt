@@ -1,0 +1,107 @@
+
+PAGE 1 – OVERVIEW DASHBOARD (DAX)
+
+Total Patients =
+COUNTROWS('heart')
+
+Heart Disease Cases =
+CALCULATE(
+    COUNTROWS('heart'),
+    'heart'[target] = 1
+)
+
+Healthy Patients =
+CALCULATE(
+    COUNTROWS('heart'),
+    'heart'[target] = 0
+)
+
+Heart Disease % =
+DIVIDE(
+    [Heart Disease Cases],
+    [Total Patients],
+    0
+)
+
+Healthy % =
+DIVIDE(
+    [Healthy Patients],
+    [Total Patients],
+    0
+)
+
+Avg Max Heart Rate =
+AVERAGE('heart'[thalach])
+
+
+PAGE 2 – CHOLESTEROL & BP RISK (DAX)
+
+Avg Cholesterol =
+ROUND(AVERAGE('heart'[chol]), 0)
+
+Cholesterol Level =
+SWITCH(
+    TRUE(),
+    'heart'[chol] < 200, "Low",
+    'heart'[chol] <= 239, "Medium",
+    "High"
+)
+
+BP Category =
+SWITCH(
+    TRUE(),
+    'heart'[trestbps] < 120, "Normal",
+    'heart'[trestbps] <= 129, "Elevated",
+    'heart'[trestbps] <= 139, "Stage 1",
+    "Stage 2"
+)
+
+Heart Risk Score =
+ROUND(
+    (
+        AVERAGE('heart'[chol]) / 300 +
+        AVERAGE('heart'[trestbps]) / 200 +
+        AVERAGE('heart'[age]) / 100
+    ) * 3,
+    1
+)
+
+
+PAGE 3 – GENDER BASED ANALYSIS (DAX)
+
+Gender =
+IF('heart'[sex] = 1, "Male", "Female")
+
+Avg Cholesterol by Gender =
+AVERAGE('heart'[chol])
+
+Heart Disease by Gender =
+CALCULATE(
+    COUNTROWS('heart'),
+    'heart'[target] = 1
+)
+
+Avg Max HR by Gender =
+AVERAGE('heart'[thalach])
+
+
+PAGE 4 – INTERACTIVE FILTERS (DAX)
+
+Age Group =
+SWITCH(
+    TRUE(),
+    'heart'[age] <= 30, "18-30",
+    'heart'[age] <= 40, "31-40",
+    'heart'[age] <= 50, "41-50",
+    'heart'[age] <= 60, "51-60",
+    "60+"
+)
+
+Filtered Cases =
+COUNTROWS('heart')
+
+Avg Case Age =
+AVERAGE('heart'[age])
+
+Heart Disease Status =
+IF('heart'[target] = 1, "Diseased", "Healthy")
